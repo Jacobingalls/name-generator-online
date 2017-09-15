@@ -1,0 +1,102 @@
+html, body {
+    padding: 0;
+    margin: 0;
+
+    height: 1vh;
+    display: block;
+    position: relative;
+
+    background: rgb(52,152,219);
+    background: -moz-linear-gradient(45deg, rgb(52,152,219) 0%, rgb(26,188,156) 100%);
+    background: -webkit-linear-gradient(45deg, rgb(52,152,219) 0%,rgb(26,188,156) 100%);
+    background: linear-gradient(45deg, rgb(52,152,219) 0%,rgb(26,188,156) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3498db', endColorstr='#1abc9c',GradientType=1 );
+
+    font-family: "Georgia", "Time New Roman", sans-serif;
+}
+
+.card {
+    padding: 20px;
+    margin: 0;
+
+    /*width: 400px;*/
+    /*background: #fff;*/
+    color: #fff;
+
+    margin: 10% auto;
+
+    /*box-shadow: 0 4px 16px 1px rgba(0,0,0, .25);*/
+}
+
+.card h1 {
+    font-size: 64px;
+    letter-spacing: .05em;
+    line-height: 1.1em;
+    text-rendering: optimizeLegibility;
+
+    text-align: center;
+
+}
+
+.card p {
+    max-width: 400px;
+    margin: 0 auto;
+
+    font-size: 24px;
+    letter-spacing: .05em;
+    line-height: 1.25em;
+    text-rendering: optimizeLegibility;
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+.card p i {
+    font-style: oblique;
+    opacity: .8;
+}
+
+.card p strong {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.card.dark p {
+    font-size: 16px;
+    opacity: .5;
+    transition: opacity 1s;
+    line-height: 1.5em;
+}
+
+.card.dark p:hover {
+    opacity: 1;
+}
+
+.card a {
+    color: #f1c40f;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+.card a:hover {
+    border-bottom: 3px solid #f1c40f;
+}
+
+.card ul {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 0;
+
+    font-size: 24px;
+    letter-spacing: .05em;
+    line-height: 1.1em;
+    text-rendering: optimizeLegibility;
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+.card ul li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

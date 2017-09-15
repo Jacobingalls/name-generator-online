@@ -1,0 +1,29 @@
+<!doctype html>
+<title>Name Generator</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+<div class="card">
+    <h1>{{name}}</h1>
+    <p>{{description | safe}}</p>
+
+    {% if links|length > 1 %}
+        <ul>
+            <!-- <li>Links:</li> -->
+            {% for link in links %}
+                <li><a href="{{ link }}">{{ link.split("/")[-1] }}</a></li>
+            {% endfor %}
+        </ul>
+    {% elif links|length > 0 %}
+        <ul>
+            <li><a href="{{ links[0] }}">More Info</a></li>
+        </ul>
+    {% endif %}
+</div>
+
+
+<div class="card dark">
+    <p>
+        Based on the <a href="https://github.com/docker/docker/blob/master/pkg/namesgenerator/names-generator.go">name generator in Docker</a>.<br>
+        View this on GitHub.
+    </p>
+</div>
